@@ -1,10 +1,12 @@
 <script setup>
 import Logo from './icons/IconLogo.vue'
+import TheNavigation from './TheNavigation.vue'
 
 </script>
 
 <template>
-<nav class="navbar navbar-expand-lg" >
+<header>
+<div class="navbar navbar-expand-lg" >
   <div class="container-fluid">
     <!-- Hamburger Dropdown Button must be first sibling -->
     <button type="button" class="navigation-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
@@ -13,14 +15,11 @@ import Logo from './icons/IconLogo.vue'
     </button>
 
     <!-- logo -->
-    <RouterLink :to="{name: 'home'}" class="navbar-brand ms-auto"> <Logo /> </RouterLink>
+    <RouterLink :to="{name: 'home'}" class="navbar-brand"> <Logo /> </RouterLink>
   </div>
-
-  
-
-  
-</nav>
-
+</div>
+<TheNavigation/>
+</header>
 </template>
 
 <style>
