@@ -12,6 +12,9 @@ import TheNavigation from './TheNavigation.vue'
     <!-- logo -->
     <RouterLink :to="{name: 'home'}" class="navbar-brand"> <Logo /> </RouterLink>
     
+    <!-- Theme toggle - fix the script that's currently on index.html -->
+    <a href="#" class="btn" role="button" data-bs-toggle="button" onclick="toggleTheme()">Toggle Theme</a>
+
     <!-- Hamburger Dropdown Button must be first sibling -->
     <button type="button" class="navbar-toggler d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
       aria-expanded="false" aria-label="Toggle navigation">

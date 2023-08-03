@@ -13,12 +13,15 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Page 3 Accordion
+                    Accordion with links
                 </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-item">
-                        <RouterLink :to="{name: 'page3'}"> Page 3</RouterLink>
+                    <div class="accordion-item accordion-nested">
+                        <RouterLink :to="{name: 'page3'}"> Page 3 </RouterLink>
+                    </div>
+                    <div class="accordion-item accordion-nested">
+                        <RouterLink :to="{name: 'departments'}"> Departments </RouterLink>
                     </div>
                 </div>
             </div>
@@ -29,7 +32,7 @@
                 </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-item">
+                <div class="accordion-item accordion-nested">
                     <RouterLink to="#"> Placeholder </RouterLink>
                 </div>
                 </div>
@@ -41,7 +44,7 @@
                 </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-item">
+                <div class="accordion-item accordion-nested">
                     <RouterLink to="#"> Placeholder </RouterLink>
                 </div>
                 </div>
@@ -61,9 +64,17 @@
     padding: 1rem 1.25rem;
     text-decoration: none;
     color: var(--bs-body-color);
-    &:hover {
+    &:hover, &:focus {
         text-decoration: underline;
+        background-color: var(--bs-secondary-bg);
+        outline:none;
     }
 }
+
+.accordion-nested > a {
+    background-color: var(--bs-secondary-bg-subtle);
+}
+
+
 
 </style>
