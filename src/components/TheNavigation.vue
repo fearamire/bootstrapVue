@@ -1,20 +1,69 @@
 <template>
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Navigation</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-    <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-        <li><RouterLink :to="{name: 'home'}" class="dropdown-item"> Home </RouterLink></li>
-        <li><RouterLink :to="{name: 'departments'}" class="dropdown-item"> departments </RouterLink></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-    </div>
+    <div class="offcanvas-body p-0">
+    
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <RouterLink :to="{name: 'home'}"> Home </RouterLink>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Page 3 Accordion
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-item">
+                        <RouterLink :to="{name: 'page3'}"> Page 3</RouterLink>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-item">
+                    <RouterLink to="#"> Placeholder </RouterLink>
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #4
+                </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-item">
+                    <RouterLink to="#"> Placeholder </RouterLink>
+                </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 </template>
+
+<style lang="scss">
+
+.accordion-item > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    color: var(--bs-body-color);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+</style>

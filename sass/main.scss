@@ -1,0 +1,8 @@
+// New custom colors
+// scss-docs-start theme-color-variables
+$blue:    #0d6efd;
+$red:     #dc3545;
+$primary:       $blue;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
