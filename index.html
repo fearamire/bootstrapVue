@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" id="js-html">
   <head>
+    <script src="./public/theme.js"></script>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,3 @@
   </body>
   <link rel="stylesheet" href="./css/main.min.css"> <!-- must load after bootstrap -->
 </html>
-
-
-<script>
-function toggleTheme() {
-  const htmlTag = document.getElementById('js-html');
-  if (htmlTag.getAttribute("data-bs-theme") === "dark") {
-    htmlTag.setAttribute("data-bs-theme", "light");
-  } else {
-    htmlTag.setAttribute("data-bs-theme", "dark");
-  }
-}
-</script>

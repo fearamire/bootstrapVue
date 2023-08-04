@@ -1,6 +1,7 @@
 # boostrapVue
 
-This template should help get you started developing with Vue 3 in Vite.
+Welcome! This project is being used to test the deployment of a Single Page Application powered by Vite, Vue 3, and Bootstrap 5.
+I, fearamire, am currently the only person working on it.
 
 ## Recommended IDE Setup
 

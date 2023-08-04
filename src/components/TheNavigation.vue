@@ -7,7 +7,7 @@
     <div class="offcanvas-body p-0">
     
         <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
+            <div class="accordion-item" data-bs-toggle="offcanvas">
                 <RouterLink :to="{name: 'home'}"> Home </RouterLink>
             </div>
             <div class="accordion-item">
@@ -17,10 +17,10 @@
                 </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-item accordion-nested">
+                    <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
                         <RouterLink :to="{name: 'page3'}"> Page 3 </RouterLink>
                     </div>
-                    <div class="accordion-item accordion-nested">
+                    <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
                         <RouterLink :to="{name: 'departments'}"> Departments </RouterLink>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                 </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-item accordion-nested">
+                <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
                     <RouterLink to="#"> Placeholder </RouterLink>
                 </div>
                 </div>
@@ -44,7 +44,7 @@
                 </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-item accordion-nested">
+                <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
                     <RouterLink to="#"> Placeholder </RouterLink>
                 </div>
                 </div>
