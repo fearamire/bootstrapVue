@@ -23,6 +23,9 @@
                     <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
                         <RouterLink :to="{name: 'departments'}"> Departments </RouterLink>
                     </div>
+                    <div class="accordion-item accordion-nested" data-bs-toggle="offcanvas">
+                        <RouterLink :to="{name: 'DadJokes'}"> DadJokes </RouterLink>
+                    </div>
                 </div>
             </div>
             <div class="accordion-item">

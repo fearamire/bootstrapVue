@@ -34,6 +34,11 @@ const router = createRouter({
           component: () => import('../views/departments/CountyClerk.vue')
         }
       ]
+    },{
+      path: '/DadJokes',
+      name: 'DadJokes',
+      component: () => import('../views/DadJokes.vue'),
+      meta: {}
     }
   ],
   linkActiveClass: 'active'

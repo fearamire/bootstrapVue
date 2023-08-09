@@ -1,0 +1,1 @@
+.card:not(:hover):not(:focus) .card-text{color:transparent;text-shadow:0 0 7px rgba(var(--bs-emphasis-color-rgb),1)}
