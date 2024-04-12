@@ -18,9 +18,15 @@ const router = createRouter({
       component: () => import('../views/About.vue')
     },
     {
-      path: '/page3',
-      name: 'page3',
-      component: () => import('../views/Page3.vue'),
+      path: '/D3/D3_Education_Data',
+      name: 'D3 Education Data',
+      component: () => import('../views/D3/EducationData.vue'),
+      meta: {}
+    },
+    {
+      path: '/D3/D3_Heat_Map',
+      name: 'D3 Heat Map',
+      component: () => import('../views/D3/HeatMap.vue'),
       meta: {}
     },
     {
@@ -29,14 +35,14 @@ const router = createRouter({
       component: () => import('../views/departments/Departments.vue'),
       children: [
         {
-          path: '/CountyClerk',
-          name: 'countyClerk',
+          path: '/County_Clerk',
+          name: 'County Clerk',
           component: () => import('../views/departments/CountyClerk.vue')
         }
       ]
     },{
-      path: '/DadJokes',
-      name: 'DadJokes',
+      path: '/Dad_Jokes',
+      name: 'Dad Jokes',
       component: () => import('../views/DadJokes.vue'),
       meta: {}
     }

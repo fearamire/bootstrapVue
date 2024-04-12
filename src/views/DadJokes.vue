@@ -4,7 +4,7 @@ import jokes from '../components/Jokes'
 </script>
 
 <script>
-console.log(jokes[1].punchLine)
+// console.log(jokes[1].punchLine)
 
 
 

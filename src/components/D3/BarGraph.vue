@@ -160,7 +160,8 @@ export default {
                             .attr('x', (d, i) => i * legRect.w + legRect.w / 2)
                             .attr('y', -5) // Adjust this value for proper label placement
                             .attr('text-anchor', 'middle')
-                            .text(d => `<${(eduMax * (d.key * 0.01)).toFixed(0)}%`);
+                            .text(d => `<${(eduMax * (d.key * 0.01)).toFixed(0)}%`)
+                            .style('fill', 'var(--color-text)');
                         }
                     ) 
                 }
@@ -184,9 +185,10 @@ export default {
     fill: #3c4ef0;
 }
 #tooltip {
+    color: var(--color-text);
     position: absolute;
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--color-background-80);
+    border: 1px solid var(--color-border);
     padding: 10px;
     display: none;
     z-index: 1;
